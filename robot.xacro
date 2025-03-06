@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find robot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find robot_description)/urdf/robot.trans" />
+<xacro:include filename="$(find robot_description)/urdf/robot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 -0.01 0.01" rpy="0 0 0"/>
+    <mass value="1.5699999999999998"/>
+    <inertia ixx="0.001361" iyy="0.001361" izz="0.002617" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__3__1">
+  <inertial>
+    <origin xyz="0.0 1.734723475976807e-17 0.005000000000000001" rpy="0 0 0"/>
+    <mass value="0.0986460093227195"/>
+    <inertia ixx="1.1e-05" iyy="1.1e-05" izz="2e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.01 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/old_component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.01 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/old_component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__2__1">
+  <inertial>
+    <origin xyz="-1.7763568394002505e-17 0.0049999999999999975 -1.734723475976807e-17" rpy="0 0 0"/>
+    <mass value="0.394584037290878"/>
+    <inertia ixx="0.000161" iyy="0.000316" izz="0.000161" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.04 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/old_component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.04 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/old_component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="old_component__1__1">
+  <inertial>
+    <origin xyz="-3.552713678800501e-17 -0.0050000000000000044 8.673617379884035e-18" rpy="0 0 0"/>
+    <mass value="0.394584037290878"/>
+    <inertia ixx="0.000161" iyy="0.000316" izz="0.000161" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.06 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/old_component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.06 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://robot_description/meshes/old_component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
